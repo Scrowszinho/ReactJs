@@ -1,5 +1,11 @@
 import ReactDOM from 'react-dom';
 import React from 'react';
 
+const tag = <strong>Olá mundo</strong>;
+
 const el = document.getElementById('root');
-ReactDOM.render(<div>Olá mundo</div>, el);
+ReactDOM.render(
+    <div>
+        {tag}
+    </div>
+    , el);
