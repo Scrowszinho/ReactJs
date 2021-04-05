@@ -5,25 +5,33 @@ import CoresParametro from './components/basics/CoresParametro';
 import Card from './components/layouts/Card';
 import './App.css';
 import Familia from './components/basics/Familia';
+import Cor from './components/basics/Cor';
+import Membro from './components/basics/Membro';
+
+var cor = Cor();
 
 export default () => {
     return (
         <div className='App'>
             <h1>Fundamentos</h1>
             <div className='Cards'>
-            <Card titulo={'#01 - Números maiores'}>
-                <Primeiro primeiro={(Math.random() * (100 - 0) + 0).toFixed()} segundo={(Math.random() * (100 - 0) + 0).toFixed()}></Primeiro>
-            </Card>
-            <Card titulo={'#02 - Com Parametro'} color={'#008'}>
-                <ComParametro titulo={'Titulo'} subtitulo={'Subtitulo'}></ComParametro>
-            </Card>
+                <Card titulo={'#01 - Números maiores'}>
+                    <Primeiro primeiro={(Math.random() * (100 - 0) + 0).toFixed()} segundo={(Math.random() * (100 - 0) + 0).toFixed()}></Primeiro>
+                </Card>
+                <Card titulo={'#02 - Com Parametro'} color={'#008'}>
+                    <ComParametro titulo={'Titulo'} subtitulo={'Subtitulo'}></ComParametro>
+                </Card>
 
-            <Card titulo={'#03 - Cores com Parametro'}  color={'#0F0'}>
-                <CoresParametro color={'#0F0'}></CoresParametro>
-            </Card>
-            <Card titulo={'#04 - Compoentes Filhos'}  color={'#800080'}>
-                <Familia sobrenome={'Godoy'}></Familia>
-            </Card>
+                <Card titulo={'#03 - Cores com Parametro'} color={cor}>
+                    <CoresParametro color={cor}></CoresParametro>
+                </Card>
+                <Card titulo={'#04 - Compoentes Filhos'} color={'#800080'} >
+                   <Familia  sobrenome={'Godoy'}>
+                    <Membro nome={'Luis Gustavo'}/>
+                    <Membro nome={'Ricardo'} />
+                    <Membro nome={'João Pedro'} />
+                    </Familia>
+                </Card>
             </div>
         </div>
     );
