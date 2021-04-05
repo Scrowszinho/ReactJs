@@ -4,6 +4,7 @@ import ComParametro from './components/basics/ComParametro';
 import CoresParametro from './components/basics/CoresParametro';
 import Card from './components/layouts/Card';
 import './App.css';
+import Familia from './components/basics/Familia';
 
 export default () => {
     return (
@@ -19,6 +20,9 @@ export default () => {
 
             <Card titulo={'#03 - Cores com Parametro'}  color={'#0F0'}>
                 <CoresParametro color={'#0F0'}></CoresParametro>
+            </Card>
+            <Card titulo={'#04 - Compoentes Filhos'}  color={'#800080'}>
+                <Familia sobrenome={'Godoy'}></Familia>
             </Card>
             </div>
         </div>
