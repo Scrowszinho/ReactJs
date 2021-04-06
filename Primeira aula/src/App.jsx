@@ -7,7 +7,7 @@ import './App.css';
 import Familia from './components/basics/Familia';
 import Cor from './components/basics/Cor';
 import Membro from './components/basics/Membro';
-
+import ListaAluno from './components/repeticao/ListaAluno';
 var cor = Cor();
 
 export default () => {
@@ -31,6 +31,9 @@ export default () => {
                     <Membro nome={'Ricardo'} />
                     <Membro nome={'João Pedro'} />
                     </Familia>
+                </Card>
+                <Card titulo={'#04 Repetição - Lista de Alunos'} color={Cor()}>
+                   <ListaAluno></ListaAluno>
                 </Card>
             </div>
         </div>
