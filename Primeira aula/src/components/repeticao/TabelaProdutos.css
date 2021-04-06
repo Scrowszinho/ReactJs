@@ -1,0 +1,14 @@
+ table{
+    width: 100%;
+}
+
+ td{
+    background-color: aliceblue;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+ th{
+    background-color: aqua;
+}

@@ -8,6 +8,7 @@ import Familia from './components/basics/Familia';
 import Cor from './components/basics/Cor';
 import Membro from './components/basics/Membro';
 import ListaAluno from './components/repeticao/ListaAluno';
+import TabelaProdutos from './components/repeticao/TabelaProdutos';
 var cor = Cor();
 
 export default () => {
@@ -34,6 +35,9 @@ export default () => {
                 </Card>
                 <Card titulo={'#04 Repetição - Lista de Alunos'} color={Cor()}>
                    <ListaAluno></ListaAluno>
+                </Card>
+                <Card titulo={'#04.1 Repetição - Lista de Produtos'} color={Cor()}>
+                   <TabelaProdutos></TabelaProdutos>
                 </Card>
             </div>
         </div>
