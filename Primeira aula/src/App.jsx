@@ -10,6 +10,7 @@ import Membro from './components/basics/Membro';
 import ListaAluno from './components/repeticao/ListaAluno';
 import TabelaProdutos from './components/repeticao/TabelaProdutos';
 import ParOuImpar from './components/condicional/ParOuImpar';
+import UsuarioInfo from './components/condicional/UsuarioInfo';
 var cor = Cor();
 
 export default () => {
@@ -42,6 +43,8 @@ export default () => {
                 </Card>
                 <Card titulo={'#05 - Condicional'} color={Cor()}>
                    <ParOuImpar num={20}></ParOuImpar>
+                   <UsuarioInfo usuario={{nome:'Gustavo'}}></UsuarioInfo>
+                   <UsuarioInfo usuario={{email:'aa'}}></UsuarioInfo>
                 </Card>
             </div>
         </div>
