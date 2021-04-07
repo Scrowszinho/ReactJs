@@ -9,6 +9,7 @@ import Cor from './components/basics/Cor';
 import Membro from './components/basics/Membro';
 import ListaAluno from './components/repeticao/ListaAluno';
 import TabelaProdutos from './components/repeticao/TabelaProdutos';
+import ParOuImpar from './components/condicional/ParOuImpar';
 var cor = Cor();
 
 export default () => {
@@ -38,6 +39,9 @@ export default () => {
                 </Card>
                 <Card titulo={'#04.1 Repetição - Lista de Produtos'} color={Cor()}>
                    <TabelaProdutos></TabelaProdutos>
+                </Card>
+                <Card titulo={'#05 - Condicional'} color={Cor()}>
+                   <ParOuImpar num={20}></ParOuImpar>
                 </Card>
             </div>
         </div>
