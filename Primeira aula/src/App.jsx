@@ -11,6 +11,8 @@ import ListaAluno from './components/repeticao/ListaAluno';
 import TabelaProdutos from './components/repeticao/TabelaProdutos';
 import ParOuImpar from './components/condicional/ParOuImpar';
 import UsuarioInfo from './components/condicional/UsuarioInfo';
+import ComunicacaoDireta from './components/comunicacao/DiretaPai';
+import DiretaPai from './components/comunicacao/DiretaPai';
 var cor = Cor();
 
 export default () => {
@@ -45,6 +47,9 @@ export default () => {
                    <ParOuImpar num={20}></ParOuImpar>
                    <UsuarioInfo usuario={{nome:'Gustavo'}}></UsuarioInfo>
                    <UsuarioInfo usuario={{email:'aa'}}></UsuarioInfo>
+                </Card>
+                <Card titulo={'#06 - Comunicacao direta'} color={Cor()}>
+                  <DiretaPai></DiretaPai>
                 </Card>
             </div>
         </div>

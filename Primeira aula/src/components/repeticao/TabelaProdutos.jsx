@@ -13,15 +13,13 @@ export default props => {
     })
     return (
         <div>
-            <table>
+            <table> 
                 <tr>
                     <th>Id</th>
                     <th>Produto</th>
                     <th>Preço R$</th>
                 </tr>
-                
                     {prod}
-               
             </table>
         </div>
     );
