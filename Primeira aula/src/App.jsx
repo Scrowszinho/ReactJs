@@ -13,6 +13,7 @@ import ParOuImpar from './components/condicional/ParOuImpar';
 import UsuarioInfo from './components/condicional/UsuarioInfo';
 import ComunicacaoDireta from './components/comunicacao/DiretaPai';
 import DiretaPai from './components/comunicacao/DiretaPai';
+import IndiretaPai from './components/comunicacao/IndiretaPai';
 var cor = Cor();
 
 export default () => {
@@ -50,6 +51,9 @@ export default () => {
                 </Card>
                 <Card titulo={'#06 - Comunicacao direta'} color={Cor()}>
                   <DiretaPai></DiretaPai>
+                </Card>
+                <Card titulo={'#07 - Comunicacao Indireta'} color={Cor()}>
+                  <IndiretaPai></IndiretaPai>
                 </Card>
             </div>
         </div>
