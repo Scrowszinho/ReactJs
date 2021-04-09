@@ -14,6 +14,7 @@ import UsuarioInfo from './components/condicional/UsuarioInfo';
 import DiretaPai from './components/comunicacao/DiretaPai';
 import IndiretaPai from './components/comunicacao/IndiretaPai';
 import Input from './components/formulario/Input';
+import Contador from './components/contador/Contador';
 var cor = Cor();
 
 export default () => {
@@ -57,6 +58,9 @@ export default () => {
                 </Card>
                 <Card titulo={'#08 - Formulario'} color={Cor()}>
                   <Input></Input>
+                </Card>
+                <Card titulo={'#09 - Contador'} color={Cor()}>
+                  <Contador numIni={10}></Contador>
                 </Card>
             </div>
         </div>
