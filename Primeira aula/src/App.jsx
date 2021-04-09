@@ -15,6 +15,7 @@ import DiretaPai from './components/comunicacao/DiretaPai';
 import IndiretaPai from './components/comunicacao/IndiretaPai';
 import Input from './components/formulario/Input';
 import Contador from './components/contador/Contador';
+import Megasena from './components/megasena/Mega';
 var cor = Cor();
 
 export default () => {
@@ -61,6 +62,9 @@ export default () => {
                 </Card>
                 <Card titulo={'#09 - Contador'} color={Cor()}>
                   <Contador numIni={10}></Contador>
+                </Card>
+                <Card titulo={'#10 - Megasena'} color={Cor()}>
+                  <Megasena></Megasena>
                 </Card>
             </div>
         </div>
