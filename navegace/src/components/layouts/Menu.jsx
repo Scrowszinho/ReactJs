@@ -1,12 +1,13 @@
 import React from 'react';
 import './Menu.css';
+import {Link} from 'react-router-dom';
 const Menu = props =>{
  return(
  <aside className='Menu'>
     <nav>
        <ul>
-          <li><a href='/'>Inicio</a></li>
-          <li><a href='/'>Sobre</a></li>
+          <li><Link to='/'>Inicio</Link></li>
+          <li><Link to='/About'>Sobre</Link></li>
        </ul>
     </nav>
     </aside>
