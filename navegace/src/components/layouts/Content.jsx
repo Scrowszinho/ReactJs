@@ -1,11 +1,27 @@
 import React from 'react';
 import './Content.css';
-const Content = props =>{
- return(
- <main className='Content'>
-    Componente Content
-    </main>
- )
+import {
+   Route,
+   Switch
+} from 'react-router-dom';
+
+import About from '../../views/examples/About';
+import Home from '../../views/examples/Home';
+
+const Content = props => {
+   return (
+      <main className='Content'>
+         <Switch>
+            <Route path='/about'>
+               <About />
+            </Route>
+
+            <Route path='/'>
+               <Home />
+            </Route>
+         </Switch>
+      </main>
+   )
 }
 
 export default Content;
