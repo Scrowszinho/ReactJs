@@ -2,9 +2,9 @@ import React from 'react';
 import './Content.css';
 const Content = props =>{
  return(
- <Main className='Content'>
+ <main className='Content'>
     Componente Content
-    </Main>
+    </main>
  )
 }
 
