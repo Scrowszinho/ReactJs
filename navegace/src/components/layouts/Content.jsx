@@ -21,7 +21,7 @@ const Content = props => {
                <Param />
             </Route>
 
-            <Route path='/'>
+            <Route exact path='/'>
                <Home />
             </Route>
 
