@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom';
 
 import About from '../../views/examples/About';
+import Param from '../../views/examples/Param';
 import Home from '../../views/examples/Home';
 
 const Content = props => {
@@ -16,9 +17,14 @@ const Content = props => {
                <About />
             </Route>
 
+            <Route path='/Param/:id'>
+               <Param />
+            </Route>
+
             <Route path='/'>
                <Home />
             </Route>
+
          </Switch>
       </main>
    )
