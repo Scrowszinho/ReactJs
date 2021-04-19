@@ -1,8 +1,16 @@
 .Menu{
     display: flex;
+    flex-basis: 50px;
+    background-color: #2a282a;
+    transition: 0.5s;
+}
+
+.Menu:hover{
+    display: flex;
     flex-basis: 250px;
     background-color: #2a282a;
 }
+
 .Menu nav{
     flex:1;
 }
