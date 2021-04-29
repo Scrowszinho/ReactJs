@@ -11,8 +11,15 @@ function fatorial(n){
 const UseEffect = (props) => {
     const [num, setNum] = useState(0);
     const [fat,setFat] = useState(1);
+    const [tipo,setTipo] = useState('');
     useEffect(() =>{
     setFat(fatorial(num))
+    },[num]);
+
+    useEffect(()=>{
+        if(num % 2 === 0){
+            setTipo('Par');
+        } else { setTipo('Impar')}
     },[num]);
 
     return (
@@ -29,7 +36,10 @@ const UseEffect = (props) => {
             <input type="number" className="input" value={num} onChange={e => setNum(e.target.value)} />
             
             <SectionTitle title='Exer #02' />
-        
+            <div style={{fontSize:'50px'}}>
+                <span>Número: </span>
+                <span style={{ color: 'red' }}>{tipo}</span>
+            </div>
         </div>
     )
 }
